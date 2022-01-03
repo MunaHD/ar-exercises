@@ -8,5 +8,5 @@ puts "----------"
 @store1 = Store.first
 @store2 = Store.find_by(id: 1)
 
-@store1.name = 'Walmart'
-# puts @store1.name
+@store1.update(name: "Walmart") 
+puts @store1.name
