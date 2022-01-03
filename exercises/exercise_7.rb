@@ -13,7 +13,6 @@ puts "----------"
 puts "Please enter a store name"
 @store = gets.chomp.to_s
 
-# new_store = Store.new(name: @store)
-# new_store.save
+
 new_store = Store.create(name: @store)
 new_store.errors.full_messages.each { |i| puts i}
